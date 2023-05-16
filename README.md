@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Songs App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a demo app that demonstrates the implementation of a basic React app with Redux state using `@reduxjs/toolkit` along with `createApi`. In this app, the API is connected directly to the Redux store, rather than using the ApiProvider. Redux DevTools are enabled only in production.
+
+Initially, I defined styles, actions, action creators, and reducers using the previous Redux Thunk implementation. However, I later migrated everything to the toolkit, utilizing slices and createSlice, which provided a more streamlined approach. Additionally, I incorporated memoized selectors to enhance the artist data. During the process, I had the idea of using `createApi`, even though it is typically meant for single requests at a time. I followed my intuition and used queryFn to augment artists to the song data, allowing me to leverage the benefits of all these components, including the use of the `useQuery` hook and caching.
+
+Overall, it was an enjoyable experience that allowed me to explore multiple patterns and different layers, making it ideal for testing and gaining insights into various approaches.
 
 ## Available Scripts
 
